@@ -11,20 +11,34 @@
         <h1>Contactanos</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="libros.html">Libros</a></li>
+            <li><a href="DondeEstamos.html">Donde estamos</a></li>
+            <li><a href="Libros.html">Libros</a></li>
+        </ul>
+    </nav>
+
+
     <form method="post" action="formcontacto.php">
         <div>
             <label for="nombre">Nombre</label>
+            <br>
             <input type="text" name="nombre" pattern="[A-Za-z]+" minlength="2" maxlength="20">
         </div>
         <br>
 
         <div>
             <label for="correo">Correo electronico</label>
+            <br>
             <input placeholder="Introduce tu correo electronico" type="email" name="correo" minlength="2" maxlength="50">
         </div>
         <br>
         <div>
             <label for="asunto">Escoge una opcion</label>
+            <br>
             <select name="asunto" id="asunto" required>
                 <option value="1">Compras</option>
                 <option value="2">General</option>
@@ -34,6 +48,7 @@
         <br>
         <div>
             <label for="mensaje">Mensaje</label>
+            <br>
             <textarea placeholder="Introduce aqui tu mensaje" minlength="1" maxlength="5000"></textarea>
         </div>
         <br>
