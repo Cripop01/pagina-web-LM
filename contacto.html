@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacta con nosotros  </title>
+    <title>Contactanos</title>
 </head>
 <body>
     <div>
-        <img src="cropped-dragon-3708746_1280-120x120.png" alt="Logo de la tienda" title="logo">
         <h1>Formulario de contacto</h1>
+    </div>
+
+    <div>
+        <img src="cropped-dragon-3708746_1280-120x120.png" alt="">
     </div>
 
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="encuentranos.html">Donde encontrarnos</a></li>
-            <li><a  href="#">Contactanos</a></li>
+            <li><a href="#">Contactanos</a></li>
             <li><a href="sobre.html">Sobre nosotros</a></li>
             <li><a href="Nintendo">Nintendo</a></li>
             <li><a href="ps4.html">Play Station</a></li>
@@ -26,36 +29,87 @@
     </nav>
 
     <div>
-        <p>Si tienes alguna duda o problema completa el siguiente formulario</p>
+        <p>
+            Si tienes alguna duda rellena el siguiente formulario.
+        </p>
     </div>
 
     <form action="contacto.php" method="post">
         <div>
             <label for="nombre">Nombre</label><br>
-            <input name="nombre" minlength="2" maxlength="100" type="text" placeholder="Introduce tu nombre">
+            <input type="text" name="Nombre" placeholder="Introduce tu nombre">
         </div>
 
         <br>
 
+        <div>
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" name="apellidos" placeholder="Introduce tus apellidos">
+        </div>
+
+        <br>
         <div>
             <label for="correo">Correo electronico</label><br>
-            <input type="email" name="correo" placeholder="Introduce tu correo electronico">
+            <input type="email" name="correo" placeholder="Introduce tu correo">
+        </div>
+
+        <br>
+        <div>
+            <label for="dni">DNI</label><br>
+            <input type="text" name="dni" placeholder="Introduce el DNI">
+        </div>
+
+        <br>    
+
+        <div>
+            <label for="sexo">Sexo: </label><br>
+            <input type="radio" name="sexo" value="1">Hombre<br>
+            <input type="radio" name="sexo" value="2">Mujer<br>
         </div>
 
         <br>
 
         <div>
-            <label for="mensaje"></label>Mensaje<br>
-            <textarea name="mensaje" minlength="10" maxlength="50000"  id="" cols="50" rows="10" placeholder="Introduce aqui tu mensaje"></textarea>
+            <label for="direccion">Direccion</label><br>
+            <input type="text">
         </div>
 
+        <br>
+
+        <div>
+            <label for="plataforma">Selecciona una opción</label><br>
+            <select name="plataforma" id="">
+                <option value="1">Play Station</option>
+                <option value="2">Xbox</option>
+                <option value="3">Nintendo</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="checkbox">He leido y acepto la <a href="politica.html">Politica de privacidad</a></label>
+            <input type="checkbox" name="checkbox" id="">
+        </div>
+        
         <br>
 
         <div>
             <button type="submit">Enviar</button>
             <button type="reset">Limpiar</button>
         </div>
-        <br>
+
+        
     </form>
+
+
+    <br>
+    
 </body>
+
+<footer>
+    <a href="politica.html">Politica de privacidad</a><br>
+    <a href="avisolegal.html">Aviso Legal</a>
+</footer>
+
 </html>
