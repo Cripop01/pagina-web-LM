@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta con nosotros  </title>
+</head>
+<body>
+    <div>
+        <img src="cropped-dragon-3708746_1280-120x120.png" alt="Logo de la tienda" title="logo">
+        <h1>Formulario de contacto</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="encuentranos.html">Donde encontrarnos</a></li>
+            <li><a  href="#">Contactanos</a></li>
+            <li><a href="sobre.html">Sobre nosotros</a></li>
+            <li><a href="Nintendo">Nintendo</a></li>
+            <li><a href="ps4.html">Play Station</a></li>
+            <li><a href="xbox.html">Xbox</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <p>Si tienes alguna duda o problema completa el siguiente formulario</p>
+    </div>
+
+    <form action="contacto.php" method="post">
+        <div>
+            <label for="nombre">Nombre</label><br>
+            <input name="nombre" minlength="2" maxlength="100" type="text" placeholder="Introduce tu nombre">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="correo">Correo electronico</label><br>
+            <input type="email" name="correo" placeholder="Introduce tu correo electronico">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="mensaje"></label>Mensaje<br>
+            <textarea name="mensaje" minlength="10" maxlength="50000"  id="" cols="50" rows="10" placeholder="Introduce aqui tu mensaje"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+        <br>
+    </form>
+</body>
+</html>
